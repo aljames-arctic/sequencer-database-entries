@@ -2,6 +2,7 @@ import { generateDatabase } from './database-generator.js'
 import { RefreshDatabaseButton } from './class/refresh-button.js'
 
 const moduleId = "sequencer-database-entries";
+const sequencerDatabaseId = 'sdbe'
 
 Hooks.once('init', async function() {
     game.settings.register(moduleId, 'assetsPath', {
@@ -38,5 +39,5 @@ Hooks.once('init', async function() {
 Hooks.once('ready', async function() {
     const SEQUENCER_DATABASE = game.settings.get(moduleId, 'sequencerDatabase');
     if (SEQUENCER_DATABASE && Object.keys(SEQUENCER_DATABASE).length > 0)
-        Sequencer.Database.registerEntries(moduleId, SEQUENCER_DATABASE);
+        Sequencer.Database.registerEntries(sequencerDatabaseId, SEQUENCER_DATABASE);
 })
