@@ -11,8 +11,8 @@ export async function generateDatabase(assetPath) {
 
             // Collision Check (same as before)
             if (a[b] && typeof a[b] === 'string') {
-                console.warn('SDBE | Conflict Detected', a[b], filepath);
-                a[b] = { '01': a[b] }; 
+                console.warn('SDBE | Conflict Detected - Setting conflict to 000 prefix', a[b], filepath);
+                a[b] = { '000': a[b] }; 
             } else if (!a[b]) {
                 a[b] = {};
             }
