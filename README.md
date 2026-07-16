@@ -1,3 +1,8 @@
+[![Foundry VTT Version](https://img.shields.io/badge/Foundry%20VTT-v13+-orange.svg)](https://foundryvtt.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+[![Latest Module Downloads](https://img.shields.io/github/downloads/aljames-arctic/sequencer-database-entries/latest/module.zip?style=flat-square&label=latest%20downloads&color=blue)](https://github.com/aljames-arctic/sequencer-database-entries/releases) [![Total Module Downloads](https://img.shields.io/github/downloads-pre/aljames-arctic/sequencer-database-entries/module.zip?style=flat-square&label=total%20downloads&color=success)](https://github.com/aljames-arctic/sequencer-database-entries/releases)
+
 # Sequencer Database Entries (SDBE)
 
 A utility module for Foundry VTT that automatically scans a designated assets folder and registers the contents into the Sequencer database. No more manual JSON indexing—just point to your folder and sync.
